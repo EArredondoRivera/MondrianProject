@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center; /* me falto tomar en cuenta que se tenia que centrar */
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  
+}
+
+    .contenedor{
+      height: 748px;
+      width: 748px;
+      display: grid;
+      grid-template-columns:320px 198px 153px 50px;
+      grid-template-rows:414px 130px 155px 22px;
+      gap: 9px;
+      background-color: black;
+      
+    }
+
+    .c1{
+      background-color: #E72F24;
+    }
+
+    .c2{
+      background-color: #F0F1EC;
+      grid-area: 1/2/2/5;
+    }
+    .c3{
+      background-color:#F0F1EC;
+      grid-area:2/2/4/4 ;
+
+    }
+    .c4{
+      background-color:#F0F1EC;
+      grid-area: 3/4/5/5;
+
+    }
+    .c5{
+      background-color:#F0F1EC;
+      grid-area: 4/1/5/2;
+    }
+    .c6{
+      background-color:#004592;
+      grid-area: 2/4/3/5;
+      border-bottom: 10px solid black;
+    
+    }
+    .c7{
+      background-color:#F0F1EC;
+      grid-area:2/1/4/2 ;
+    }
+    .c8{
+      background-color:#F9D01E;
+      grid-area:4/2/4/3;
+
+    }
+    .c9{
+      background-color:#232629; 
+      grid-area:4/3/4/4;
+      }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="contenedor">
+    <div class="c1"></div>
+    <div class="c2"></div>
+    <div class="c3"></div>
+    <div class="c4"></div>
+    <div class="c5"></div>
+    <div class="c6"></div>
+    <div class="c7"></div>
+    <div class="c8"></div>
+    <div class="c9"></div>
+  </div>
+</body>
+
+</html>
